@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timer View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TimerViewController" customModule="OrbisAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzu-RW-46I">
+                                <rect key="frame" x="50" y="272.5" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Q35-zY-OYp"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown TImer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8U1-n3-fUo">
+                                <rect key="frame" x="20" y="342.5" width="374" height="21"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvQ-hq-P7x">
+                                <rect key="frame" x="20" y="393.5" width="374" height="21"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="So2-hd-neA">
+                                <rect key="frame" x="107" y="444.5" width="200" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58T-Pi-yDU">
+                                        <rect key="frame" x="0.0" y="0.0" width="92.5" height="45"/>
+                                        <color key="backgroundColor" red="0.33725490196078434" green="0.61176470588235299" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startBUttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAV-j6-tyh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1Y-wb-IrG">
+                                        <rect key="frame" x="107.5" y="0.0" width="92.5" height="45"/>
+                                        <color key="backgroundColor" red="0.33725490196078434" green="0.61176470588235299" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nre-fP-2PK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GeY-j6-WJG"/>
+                                    <constraint firstAttribute="height" constant="45" id="oM1-KU-dYt"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the timer, by clicking below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbm-Lh-4mh">
+                                <rect key="frame" x="20" y="222.5" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IWr-ga-xbb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TvQ-hq-P7x" firstAttribute="leading" secondItem="8U1-n3-fUo" secondAttribute="leading" id="D83-is-LJj"/>
+                            <constraint firstItem="Zzu-RW-46I" firstAttribute="top" secondItem="nbm-Lh-4mh" secondAttribute="bottom" constant="20" id="DNd-Dt-pkv"/>
+                            <constraint firstItem="nbm-Lh-4mh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H16-EA-hAC"/>
+                            <constraint firstItem="8U1-n3-fUo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="IGj-vs-OzY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zzu-RW-46I" secondAttribute="trailing" constant="50" id="K1t-L1-cqK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8U1-n3-fUo" secondAttribute="trailing" constant="20" id="LAh-G3-onx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nbm-Lh-4mh" secondAttribute="trailing" constant="20" id="RnF-xY-KvE"/>
+                            <constraint firstItem="So2-hd-neA" firstAttribute="top" secondItem="TvQ-hq-P7x" secondAttribute="bottom" constant="30" id="act-y4-I7d"/>
+                            <constraint firstItem="TvQ-hq-P7x" firstAttribute="trailing" secondItem="8U1-n3-fUo" secondAttribute="trailing" id="d2u-gk-kjh"/>
+                            <constraint firstItem="8U1-n3-fUo" firstAttribute="top" secondItem="Zzu-RW-46I" secondAttribute="bottom" constant="20" id="gUI-X4-aJK"/>
+                            <constraint firstItem="Zzu-RW-46I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="gap-eZ-c51"/>
+                            <constraint firstItem="8U1-n3-fUo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lYP-od-rOd"/>
+                            <constraint firstItem="So2-hd-neA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p7t-AP-aod"/>
+                            <constraint firstItem="TvQ-hq-P7x" firstAttribute="top" secondItem="8U1-n3-fUo" secondAttribute="bottom" constant="30" id="uyg-LV-X8w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countDownLabel" destination="8U1-n3-fUo" id="PdN-WC-vwn"/>
+                        <outlet property="pickerView" destination="Zzu-RW-46I" id="jbP-op-hct"/>
+                        <outlet property="startButton" destination="58T-Pi-yDU" id="FzL-ge-xww"/>
+                        <outlet property="stopButton" destination="g1Y-wb-IrG" id="QY5-ET-8hd"/>
+                        <outlet property="timerLabel" destination="TvQ-hq-P7x" id="x5B-3M-EIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="66"/>
+        </scene>
+    </scenes>
+</document>

@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		442DF9BC2439CC9B001ECD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DF9BB2439CC9B001ECD3E /* AppDelegate.swift */; };
 		442DF9BE2439CC9B001ECD3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DF9BD2439CC9B001ECD3E /* SceneDelegate.swift */; };
-		442DF9C02439CC9B001ECD3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DF9BF2439CC9B001ECD3E /* ViewController.swift */; };
 		442DF9C32439CC9B001ECD3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442DF9C12439CC9B001ECD3E /* Main.storyboard */; };
 		442DF9C52439CC9E001ECD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442DF9C42439CC9E001ECD3E /* Assets.xcassets */; };
 		442DF9C82439CC9E001ECD3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442DF9C62439CC9E001ECD3E /* LaunchScreen.storyboard */; };
 		442DF9D32439CC9E001ECD3E /* OrbisAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DF9D22439CC9E001ECD3E /* OrbisAssignmentTests.swift */; };
 		442DF9DE2439CC9E001ECD3E /* OrbisAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DF9DD2439CC9E001ECD3E /* OrbisAssignmentUITests.swift */; };
+		442DF9EC2439CCC0001ECD3E /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DF9EB2439CCC0001ECD3E /* TimerViewController.swift */; };
+		442DF9EE2439D113001ECD3E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DF9ED2439D113001ECD3E /* Extension.swift */; };
+		444277C0243A0F1300B488C1 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444277BF243A0F1300B488C1 /* CustomAlertViewController.swift */; };
+		444277C4243A0FFA00B488C1 /* CustomAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444277C3243A0FFA00B488C1 /* CustomAlertViewController.xib */; };
+		444277C6243A28F700B488C1 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444277C5243A28F700B488C1 /* StringConstants.swift */; };
+		444277C8243A2B4A00B488C1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444277C7243A2B4A00B488C1 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		442DF9B82439CC9B001ECD3E /* OrbisAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrbisAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442DF9BB2439CC9B001ECD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442DF9BD2439CC9B001ECD3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		442DF9BF2439CC9B001ECD3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		442DF9C22439CC9B001ECD3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		442DF9C42439CC9E001ECD3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442DF9C72439CC9E001ECD3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		442DF9D92439CC9E001ECD3E /* OrbisAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbisAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		442DF9DD2439CC9E001ECD3E /* OrbisAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbisAssignmentUITests.swift; sourceTree = "<group>"; };
 		442DF9DF2439CC9E001ECD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442DF9EB2439CCC0001ECD3E /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		442DF9ED2439D113001ECD3E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		444277BF243A0F1300B488C1 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		444277C3243A0FFA00B488C1 /* CustomAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertViewController.xib; sourceTree = "<group>"; };
+		444277C5243A28F700B488C1 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		444277C7243A2B4A00B488C1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +109,11 @@
 		442DF9BA2439CC9B001ECD3E /* OrbisAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				442DF9BB2439CC9B001ECD3E /* AppDelegate.swift */,
-				442DF9BD2439CC9B001ECD3E /* SceneDelegate.swift */,
-				442DF9BF2439CC9B001ECD3E /* ViewController.swift */,
-				442DF9C12439CC9B001ECD3E /* Main.storyboard */,
+				444277CE243A380500B488C1 /* Helpers */,
+				444277CB243A37A700B488C1 /* Controller */,
+				444277CA243A379F00B488C1 /* Models */,
+				444277C9243A379B00B488C1 /* VIew */,
 				442DF9C42439CC9E001ECD3E /* Assets.xcassets */,
-				442DF9C62439CC9E001ECD3E /* LaunchScreen.storyboard */,
 				442DF9C92439CC9E001ECD3E /* Info.plist */,
 			);
 			path = OrbisAssignment;
@@ -126,6 +135,60 @@
 				442DF9DF2439CC9E001ECD3E /* Info.plist */,
 			);
 			path = OrbisAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		444277C9243A379B00B488C1 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				444277CD243A37D300B488C1 /* Storyboard */,
+				444277CC243A37CD00B488C1 /* Xib */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		444277CA243A379F00B488C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				444277C7243A2B4A00B488C1 /* DataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		444277CB243A37A700B488C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				442DF9EB2439CCC0001ECD3E /* TimerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		444277CC243A37CD00B488C1 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				444277C3243A0FFA00B488C1 /* CustomAlertViewController.xib */,
+				444277BF243A0F1300B488C1 /* CustomAlertViewController.swift */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		444277CD243A37D300B488C1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				442DF9C12439CC9B001ECD3E /* Main.storyboard */,
+				442DF9C62439CC9E001ECD3E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		444277CE243A380500B488C1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				442DF9BB2439CC9B001ECD3E /* AppDelegate.swift */,
+				442DF9BD2439CC9B001ECD3E /* SceneDelegate.swift */,
+				442DF9ED2439D113001ECD3E /* Extension.swift */,
+				444277C5243A28F700B488C1 /* StringConstants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +297,7 @@
 			files = (
 				442DF9C82439CC9E001ECD3E /* LaunchScreen.storyboard in Resources */,
 				442DF9C52439CC9E001ECD3E /* Assets.xcassets in Resources */,
+				444277C4243A0FFA00B488C1 /* CustomAlertViewController.xib in Resources */,
 				442DF9C32439CC9B001ECD3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				442DF9C02439CC9B001ECD3E /* ViewController.swift in Sources */,
+				442DF9EE2439D113001ECD3E /* Extension.swift in Sources */,
+				444277C6243A28F700B488C1 /* StringConstants.swift in Sources */,
+				442DF9EC2439CCC0001ECD3E /* TimerViewController.swift in Sources */,
+				444277C8243A2B4A00B488C1 /* DataModel.swift in Sources */,
 				442DF9BC2439CC9B001ECD3E /* AppDelegate.swift in Sources */,
+				444277C0243A0F1300B488C1 /* CustomAlertViewController.swift in Sources */,
 				442DF9BE2439CC9B001ECD3E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,12 +503,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53N7DEJV27;
 				INFOPLIST_FILE = OrbisAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobikasa.OrbisAssingment.OrbisAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evisit.app.knownow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,12 +521,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53N7DEJV27;
 				INFOPLIST_FILE = OrbisAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobikasa.OrbisAssingment.OrbisAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evisit.app.knownow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

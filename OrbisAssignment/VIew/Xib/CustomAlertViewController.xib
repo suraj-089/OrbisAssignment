@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertViewController" customModule="OrbisAssignment" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="JzD-ko-jWK" id="3WH-WY-2ho"/>
+                <outlet property="btnContainer" destination="2oa-iV-hmS" id="Qlp-fl-QcH"/>
+                <outlet property="centerButton" destination="JOB-rH-oHV" id="VtN-VZ-Yja"/>
+                <outlet property="leftButton" destination="rIB-bp-MN7" id="G6r-t7-p2b"/>
+                <outlet property="rightButton" destination="upg-MD-GId" id="bvU-84-T1g"/>
+                <outlet property="subTitleLabel" destination="89C-5K-0Bt" id="r8X-YQ-fM1"/>
+                <outlet property="titleLabel" destination="7ug-tU-04U" id="pfM-x1-ODM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMa-DM-mzq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzD-ko-jWK">
+                    <rect key="frame" x="20" y="148" width="280" height="250"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOB-rH-oHV">
+                            <rect key="frame" x="93.5" y="116.5" width="93" height="40"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.74509803921568629" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="vpv-Ds-21a"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="centerButtonClicked:" destination="-1" eventType="touchUpInside" id="em1-b1-K5v"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oa-iV-hmS" userLabel="BtnContainer">
+                            <rect key="frame" x="39" y="116.5" width="202" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upg-MD-GId">
+                                    <rect key="frame" x="111" y="0.0" width="91" height="40"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                    <state key="normal" title="Right">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="AppThemeColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="rightButtonClicked:" destination="-1" eventType="touchUpInside" id="hye-Lj-EKx"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIB-bp-MN7">
+                                    <rect key="frame" x="0.0" y="0.0" width="91" height="40"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                    <state key="normal" title="Left">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="leftButtonClicked:" destination="-1" eventType="touchUpInside" id="AJK-vl-wJf"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4Or-0d-y5O"/>
+                                <constraint firstItem="upg-MD-GId" firstAttribute="top" secondItem="2oa-iV-hmS" secondAttribute="top" id="7mm-eh-bRI"/>
+                                <constraint firstAttribute="bottom" secondItem="rIB-bp-MN7" secondAttribute="bottom" id="FJS-Rk-n8c"/>
+                                <constraint firstItem="upg-MD-GId" firstAttribute="leading" secondItem="rIB-bp-MN7" secondAttribute="trailing" constant="20" id="NLR-0M-IRp"/>
+                                <constraint firstItem="upg-MD-GId" firstAttribute="width" secondItem="rIB-bp-MN7" secondAttribute="width" id="Nki-K5-PeU"/>
+                                <constraint firstAttribute="bottom" secondItem="upg-MD-GId" secondAttribute="bottom" id="Skj-KH-DVA"/>
+                                <constraint firstItem="rIB-bp-MN7" firstAttribute="top" secondItem="2oa-iV-hmS" secondAttribute="top" id="auf-a9-PnQ"/>
+                                <constraint firstItem="rIB-bp-MN7" firstAttribute="leading" secondItem="2oa-iV-hmS" secondAttribute="leading" id="iVD-oN-Olz"/>
+                                <constraint firstAttribute="trailing" secondItem="upg-MD-GId" secondAttribute="trailing" id="ixn-C0-Iae"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ug-tU-04U" customClass="UILocalizedLabel" customModule="OrbisAssignment" customModuleProvider="target">
+                            <rect key="frame" x="113" y="35.5" width="54.5" height="21"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89C-5K-0Bt" customClass="UILocalizedLabel" customModule="OrbisAssignment" customModuleProvider="target">
+                            <rect key="frame" x="30" y="68" width="220" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.31372549019607843" green="0.61176470588235299" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JOB-rH-oHV" firstAttribute="centerY" secondItem="2oa-iV-hmS" secondAttribute="centerY" id="1UD-RH-awp"/>
+                        <constraint firstItem="JOB-rH-oHV" firstAttribute="width" secondItem="JzD-ko-jWK" secondAttribute="width" multiplier="1/3" id="H4k-P7-i6V"/>
+                        <constraint firstItem="89C-5K-0Bt" firstAttribute="leading" secondItem="JzD-ko-jWK" secondAttribute="leading" constant="30" id="RFX-xK-c1P"/>
+                        <constraint firstAttribute="trailing" secondItem="2oa-iV-hmS" secondAttribute="trailing" constant="39" id="Tep-kA-Bka"/>
+                        <constraint firstItem="2oa-iV-hmS" firstAttribute="leading" secondItem="JzD-ko-jWK" secondAttribute="leading" constant="39" id="aao-zA-1HC"/>
+                        <constraint firstAttribute="trailing" secondItem="89C-5K-0Bt" secondAttribute="trailing" constant="30" id="coc-Be-RCf"/>
+                        <constraint firstItem="7ug-tU-04U" firstAttribute="top" secondItem="JzD-ko-jWK" secondAttribute="top" constant="35.600000000000001" id="f4O-W1-2sW"/>
+                        <constraint firstItem="7ug-tU-04U" firstAttribute="centerX" secondItem="JzD-ko-jWK" secondAttribute="centerX" id="fii-HJ-Oyg"/>
+                        <constraint firstItem="2oa-iV-hmS" firstAttribute="top" secondItem="89C-5K-0Bt" secondAttribute="bottom" constant="25" id="mLM-rB-sRC"/>
+                        <constraint firstAttribute="height" constant="250" id="owb-JJ-jTY"/>
+                        <constraint firstItem="JOB-rH-oHV" firstAttribute="centerX" secondItem="2oa-iV-hmS" secondAttribute="centerX" id="wGI-nd-5AY"/>
+                        <constraint firstItem="89C-5K-0Bt" firstAttribute="top" secondItem="7ug-tU-04U" secondAttribute="bottom" constant="11.4" id="zvv-H7-6iP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MMa-DM-mzq" secondAttribute="bottom" id="9ku-Fn-pru"/>
+                <constraint firstItem="JzD-ko-jWK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="D0g-Vi-Q3W"/>
+                <constraint firstItem="MMa-DM-mzq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DfF-dJ-9aN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JzD-ko-jWK" secondAttribute="trailing" constant="20" id="H4I-Xf-xnV"/>
+                <constraint firstItem="MMa-DM-mzq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JXI-ez-0v9"/>
+                <constraint firstItem="JzD-ko-jWK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-11" id="SSB-0S-fPk"/>
+                <constraint firstAttribute="trailing" secondItem="MMa-DM-mzq" secondAttribute="trailing" id="ev8-Eg-qlj"/>
+                <constraint firstItem="JzD-ko-jWK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="s0Y-lX-mfv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-232.5" y="47.535211267605632"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppThemeColor">
+            <color red="0.99607843137254903" green="0.38823529411764707" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
